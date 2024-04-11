@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Planeta do Poder</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+    </head>
+    <body>
+
+        <h1>Bem-vindo ao Planeta do Poder!!!</h1>
+        
+        <h3>Planetas cadastrados:</h3>
+        
+        <tr th:each=" planeta : ${planetas}">
+			<span th:text="${planeta.nome}"></span>
+			<span th:text="${planeta.populacao}"></span>
+			<p></p>
+		</tr>
+		        
+    </body>
+</html>
